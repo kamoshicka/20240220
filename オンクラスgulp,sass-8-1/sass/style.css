@@ -1,0 +1,14 @@
+.big-class {
+  width: 600px;
+}
+
+.small-class {
+  width: 300px;
+}
+
+.inner {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 10px;
+}/*# sourceMappingURL=style.css.map */

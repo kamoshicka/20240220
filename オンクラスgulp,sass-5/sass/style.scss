@@ -1,0 +1,8 @@
+$default:200px;
+$calc:3;
+.math {
+    width: 500px + 100;
+    height: $default * 3;
+    padding-top: $default / $calc;
+    font-size: $default % 9;
+}

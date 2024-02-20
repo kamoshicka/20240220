@@ -1,0 +1,10 @@
+"liveSassCompile.settings.formats": [
+    {
+      // --styleオプションと同じ
+      "format": "expanded",
+      // コンパイル後の拡張子
+      "extensionName": ".css",
+      // コンパイル後のファイルをどこに追加するのか
+      "savePath": "/html/css"
+    }
+  ]

@@ -1,0 +1,47 @@
+// 1. ifの処理を@mixinの中で⾏い、対象のクラスの中で展開し、
+// ifの条件で通ったCSSのプロパティーを反映
+
+@mixin apply-style($condition) {
+    @if $condition == 'large' {
+        width: 600px;
+    }
+    @else if $condition == 'small'{
+        width: 300px;
+    }
+    @else {
+        width: 400px;
+    }
+}
+.big-class {
+    @include apply-style ('large');
+}
+.small-class {
+    @include apply-style ('small');
+}
+
+// 2. $snsClass内にある配列の数だけクラスを作り、
+// $mapのkeyに対応したvalueの値をbackground-colorに反映
+.inner {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 10px;
+   }
+   @mixin btn($color) {
+    display: block;
+    padding: 20px 30px;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: $color;
+    text-decoration: none;
+    text-align: center;
+   }
+   $map: (
+    "line": #00B900,
+    "instagram": #CF2E92,
+    "facebook": #71d0f2,
+    "twitter": #1DA1F2,
+    );
+   $snsClass:"line","instagram","facebook","twitter";
+   

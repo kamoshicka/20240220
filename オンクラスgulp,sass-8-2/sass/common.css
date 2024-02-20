@@ -1,0 +1,25 @@
+.inner {
+  width: 100%;
+  max-width: 1000px;
+  margin: 10px auto 10px;
+  padding: 16px 0 16px 0;
+  color: white;
+  font-size: 12px;
+  border-color: transparent;
+}
+
+.sns-line {
+  background: #00B900;
+}
+
+.sns-instagram {
+  background: #CF2E92;
+}
+
+.sns-facebook {
+  background: #71d0f2;
+}
+
+.sns-twitter {
+  background: #1DA1F2;
+}/*# sourceMappingURL=common.css.map */
